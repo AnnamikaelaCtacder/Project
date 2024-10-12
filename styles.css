@@ -1,0 +1,178 @@
+body {
+    font-family: Open Sans, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2;
+}
+
+header {
+    background-color: #228B22;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 120px;
+    height: 80px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-left: 120px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-left: 140px;
+}
+
+nav {
+    background-color: #F2F2F2;
+    padding: 0.5rem 0;
+    text-align: center;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin-right: 0;
+    transition: margin 0.3s ease;
+}
+
+nav li:hover {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #228B22;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+nav a:hover {
+    background-color: #F2F2F2;
+}
+
+nav a.active {
+    background-color: #F2F2F2;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+section h3, section ul, section li {
+    text-align: left;
+    margin-left: 0;
+}
+
+section ul {
+    padding-left: 0;
+}
+
+#what-is-sdg img {
+    float: left;
+    margin: 10px;
+    width: 200px;
+    height: 150px;
+}
+
+#what-is-sdg p {
+    margin-left: 220px;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.health-image {
+    float: left;
+    margin: 30px;
+    width: 300px;
+}
+
+.health-bullet-points {
+    margin-right: 220px;
+}
+
+.medburden-image {
+    float: left;
+    margin: 30px;
+    width: 200px;
+}
+
+.medburden-bullet-points {
+    margin-left: 220px;
+}
+
+.current-issue-image {
+    float: left;
+    margin: 30px;
+    width: 200px;
+}
+
+.current-issue-bullet-points {
+    margin-left: 220px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.gallery-item {
+    margin: 1rem;
+    width: 250px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.gallery-item p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+footer {
+    background-color: #228B22;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    clear: both;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1rem;
+}
