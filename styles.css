@@ -126,14 +126,6 @@ p {
     font-size: 1.1rem;
 }
 
-.health-image, .medburden-image, .current-issue-image {
-    float: left;
-    margin: 20px;
-    width: 220px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -175,30 +167,58 @@ footer p {
     font-size: 1.1rem;
 }
 
+.sprite-icons {
+    margin-top: 2rem;
+}
+
 .icon {
-    background-image: url('images/sprite.png');
+    background-image: url('https://www.pngfind.com/pngs/m/181-1813859_the-flash-character-sprites-human-pixel-art-transparent.png');
     display: inline-block;
-    width: 32px;
-    height: 32px;
+    width: 60px; 
+    height: 50px; 
     background-size: cover;
+    transition: transform 0.3s ease;
 }
 
 .icon-home {
-    background-position: 0 0;
+    background-position: 0 0; 
 }
 
 .icon-health {
     background-position: -32px 0;
 }
 
-.icon:hover {
-    animation: icon-animation 0.5s forwards;
+.icon-exercise {
+    background-position: -64px 0; 
 }
 
-@keyframes icon-animation {
-    0% { transform: scale(1); }
-    100% { transform: scale(1.2); }
+.icon-nutrition {
+    background-position: -96px 0;
 }
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+
+a[target="_blank"] {
+    color: green;
+    font-weight: bold;
+}
+
+input[required] {
+    border: 2px solid red;
+}
+
+img[alt="Healthy Food"] {
+    border: 2px solid blue;
+}
+
+button[data-action="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
 
 @media (max-width: 768px) {
     nav ul {
@@ -218,12 +238,12 @@ footer p {
         width: 90%;
     }
 
-    .health-image, .medburden-image, .current-issue-image {
-        width: 100%;
-        margin: 10px 0;
-    }
-
     .gallery-item {
         width: 90%;
+    }
+
+    .icon-container {
+        flex-direction: column;
+        align-items: center;
     }
 }
