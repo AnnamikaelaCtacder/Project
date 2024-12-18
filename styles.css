@@ -1,45 +1,43 @@
 body {
-    font-family: Open Sans, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F2F2F2;
+    background-color: #F4F6F8;
 }
 
 header {
-    background-color: #228B22;
-    color: #fff;
-    padding: 1rem 0;
+    background-color: #3E8EDE; 
+    color: #ffffff;
+    padding: 2rem 0;
     text-align: center;
     position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 120px;
-    height: 80px;
+    top: 20px; 
+    left: 20px;
+    width: 100px;
+    height: auto;
 }
 
 h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: bold;
-    margin-left: 120px;
+    padding-top: 60px; 
 }
 
 h2 {
-    margin: 0;
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-left: 140px;
+    margin: 0.5rem 0 1.5rem;
+    font-size: 1.9rem;
+    font-weight: normal;
 }
 
 nav {
-    background-color: #F2F2F2;
-    padding: 0.5rem 0;
-    text-align: center;
-    justify-content: center;
+    background-color: #E1F5FE; 
+    padding: 1rem 0;
 }
 
 nav ul {
@@ -52,32 +50,35 @@ nav ul {
 }
 
 nav li {
-    margin-right: 0;
-    transition: margin 0.3s ease;
+    margin: 0 20px;
+    transition: transform 0.3s ease;
 }
 
 nav li:hover {
-    margin-right: 20px;
+    transform: scale(1.1);
 }
 
 nav a {
-    color: #228B22;
+    color: #3E8EDE;
     text-decoration: none;
-    padding: 10px 10px;
-    border-radius: 10px;
-    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
 }
 
 nav a:hover {
-    background-color: gray;
+    background-color: #B3E5FC;
+    color: #ffffff;
 }
 
 nav a.active {
-    background-color: #F2F2F2;
+    background-color: #E1F5FE;
 }
 
 main {
-    padding: 2rem;
+    padding: 3rem 1rem;
     text-align: center;
 }
 
@@ -90,80 +91,47 @@ section ul {
     padding-left: 0;
 }
 
-#what-is-sdg img {
-    float: left;
-    margin: 10px;
-    width: 200px;
-    height: 150px;
+#what-is-sdg {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
 }
 
- #what-is-sdg {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: space-between;
-        }
-        iframe {
-            border: 2px solid #ccc;
-            border-radius: 8px;
-        }
-        article {
-            flex: 1;
-            min-width: 300px;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        article h2 {
-            color: #333;
-        }
-        article ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        article li {
-            margin-bottom: 10px;
-        }
+article {
+    flex: 1;
+    min-width: 300px;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
-#what-is-sdg p {
-    margin-left: 220px;
+article h2 {
+    color: #333;
+}
+
+article ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+article li {
+    margin-bottom: 10px;
 }
 
 p {
-    line-height: 1.6;
+    line-height: 1.7;
     font-size: 1.1rem;
 }
 
-.health-image {
+.health-image, .medburden-image, .current-issue-image {
     float: left;
-    margin: 30px;
-    width: 300px;
-}
-
-.health-bullet-points {
-    margin-right: 220px;
-}
-
-.medburden-image {
-    float: left;
-    margin: 30px;
-    width: 200px;
-}
-
-.medburden-bullet-points {
-    margin-left: 220px;
-}
-
-.current-issue-image {
-    float: left;
-    margin: 30px;
-    width: 200px;
-}
-
-.current-issue-bullet-points {
-    margin-left: 220px;
+    margin: 20px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .gallery {
@@ -175,9 +143,9 @@ p {
 
 .gallery-item {
     margin: 1rem;
-    width: 250px;
-    background-color: #fff;
-    padding: 15px;
+    width: 260px;
+    background-color: #ffffff; 
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -195,9 +163,9 @@ p {
 }
 
 footer {
-    background-color: #228B22;
-    color: #fff;
-    padding: 1rem 0;
+    background-color: #3E8EDE; 
+    color: #ffffff;
+    padding: 1.5rem 0;
     text-align: center;
     clear: both;
 }
@@ -205,4 +173,57 @@ footer {
 footer p {
     margin: 0;
     font-size: 1.1rem;
+}
+
+.icon {
+    background-image: url('images/sprite.png');
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+}
+
+.icon-home {
+    background-position: 0 0;
+}
+
+.icon-health {
+    background-position: -32px 0;
+}
+
+.icon:hover {
+    animation: icon-animation 0.5s forwards;
+}
+
+@keyframes icon-animation {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.2); }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    #what-is-sdg {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article {
+        width: 90%;
+    }
+
+    .health-image, .medburden-image, .current-issue-image {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .gallery-item {
+        width: 90%;
+    }
 }
