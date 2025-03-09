@@ -13,9 +13,9 @@
        
         <nav>
             <ul>
-                <li><a href="file:///C:/Users/Anna/Downloads/FirstQuarterProject-main/FirstQuarterProject-main/home.html">About</a></li>
+                <li><a href="home.html">About</a></li>
                 <li><a href="health-well-being.html">Causes</a></li>
-                <li><a href="file:///C:/Users/Anna/Downloads/FirstQuarterProject-main/FirstQuarterProject-main/Goals.html">Effects</a></li>
+                <li><a href="Goals.html">Effects</a></li>
                 <li><a href="involve.html">Current Issues</a></li>
             </ul>
             <img src="images/logo.jpg" alt="Logo" class="logo">
@@ -68,9 +68,25 @@
             <div class="icon icon-exercise"></div>
             <div class="icon icon-nutrition"></div>
         </section>
-    </main>
+
+
+<section id="quiz-section">
+        <h2>Health and Well-Being Quiz</h2>
+        <div id="quiz-container">
+            <h3 id="question"></h3>
+            <div id="choices"></div>
+        </div>
+        <div id="result-container" style="display: none;">
+            <h3 id="result-text"></h3>
+            <button id="next-btn">Try Again</button>
+        </div>
+    </section>
+    
     <footer>
         <p>&copy; 2024 Health and Well-being</p>
     </footer>
+    
+    <script src="quiz.js"></script>
+
 </body>
 </html>
