@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
         let isValid = true;
 
-        // Validate First Name
         if (firstNameInput.value.trim() === '') {
             firstNameError.textContent = 'required';
             isValid = false;
@@ -26,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
             firstNameError.textContent = '';
         }
 
-        // Validate Last Name
         if (lastNameInput.value.trim() === '') {
             lastNameError.textContent = 'required';
             isValid = false;
@@ -34,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function() {
             lastNameError.textContent = '';
         }
 
-        // Validate Sex
         let sexSelected = false;
         for (const radio of sexInputs) {
             if (radio.checked) {
@@ -49,7 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
             sexError.textContent = '';
         }
 
-        // Validate Email
         if (emailInput.value.trim() === '') {
             emailError.textContent = 'required';
             isValid = false;
@@ -60,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function() {
             emailError.textContent = '';
         }
 
-        // Validate Password
         if (passwordInput.value.trim() === '') {
             passwordError.textContent = 'required';
             isValid = false;
@@ -68,7 +63,6 @@ document.addEventListener('DOMContentLoaded', function() {
             passwordError.textContent = '';
         }
 
-        // Validate Support Reason
         if (supportReasonInput.value.trim() === '') {
             supportReasonError.textContent = 'required';
             isValid = false;
@@ -95,7 +89,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function isValidEmail(email) {
-        // Basic email validation regex
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
     }
