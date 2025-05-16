@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEALTHY COMMUNITIES, BRIGHT FUTURES</title>
+    <link rel="stylesheet" href="styles.css"> </head>
+<body>
+    <header>
+        <h1>HEALTHY COMMUNITIES, BRIGHT FUTURES</h1>
+        <h2>"Well-being is not just the absence of illness; it is the presence of vitality and resilience."</h2>
+        
+        <nav>
+            <ul>
+                <li><a href="home.html">About</a></li>
+                <li><a href="health-well-being.html">Causes</a></li>
+                <li><a href="Goals.html">Effects</a></li>
+                <li><a href="involve.html">Current Issues</a></li>
+            </ul>
+            <img src="images/logo.jpg" alt="Logo" class="logo">
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile-container">
+            <h1>Your Profile</h1>
+            <div class="profile-info">
+                <p><strong>First Name:</strong> <span id="firstNameDisplay"></span></p>
+                <p><strong>Last Name:</strong> <span id="lastNameDisplay"></span></p>
+                <p><strong>Email:</strong> <span id="emailDisplay"></span></p>
+                <p><strong>Sex:</strong> <span id="sexDisplay"></span></p>
+                <p><strong>Why I support this campaign:</strong> <span id="supportReasonDisplay"></span></p>
+            </div>
+            <div class="button-container">
+                <a href="proj_signup_lastname.html" class="back-button">Go Back to Sign Up</a>
+                <a href="home.html" class="home-button">Go to Homepage</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Health and Well-being</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('firstNameDisplay').textContent = localStorage.getItem('firstName');
+            document.getElementById('lastNameDisplay').textContent = localStorage.getItem('lastName');
+            document.getElementById('emailDisplay').textContent = localStorage.getItem('email');
+            document.getElementById('sexDisplay').textContent = localStorage.getItem('sex');
+            document.getElementById('supportReasonDisplay').textContent = localStorage.getItem('supportReason');
+        });
+    </script>
+</body>
+</html>
