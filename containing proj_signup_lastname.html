@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up - Egalitarianism Hub</title>
-    <link rel="stylesheet" href="ref.css">
-
+    <title>Sign Up - Health and Well-being Hub</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="signup-container">
@@ -14,47 +13,47 @@
         <form id="signupForm">
             <div class="form-group">
                 <label for="firstName">First Name <span class="required">*</span> <span id="firstNameError" class="error-message"></span></label>
-                <input type="text" id="firstName" name="firstName" required>
+                <input type="text" id="firstName" name="firstName">
             </div>
 
             <div class="form-group">
                 <label for="lastName">Last Name <span class="required">*</span> <span id="lastNameError" class="error-message"></span></label>
-                <input type="text" id="lastName" name="lastName" required>
+                <input type="text" id="lastName" name="lastName">
             </div>
 
             <div class="form-group">
                 <label>Sex <span class="required">*</span> <span id="sexError" class="error-message"></span></label>
                 <div class="radio-group">
-                    <label><input type="radio" name="sex" value="male" required> Male</label>
-                    <label><input type="radio" name="sex" value="female" required> Female</label>
-                    <label><input type="radio" name="sex" value="prefer_not_to_say" required> Prefer not to say</label>
+                    <label><input type="radio" name="sex" value="male"> Male</label>
+                    <label><input type="radio" name="sex" value="female"> Female</label>
+                    <label><input type="radio" name="sex" value="prefer_not_to_say"> Prefer not to say</label>
                 </div>
             </div>
 
             <div class="form-group">
                 <label for="email">Email Address <span class="required">*</span> <span id="emailError" class="error-message"></span></label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email">
             </div>
 
             <div class="form-group">
                 <label for="password">Password <span class="required">*</span> <span id="passwordError" class="error-message"></span></label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" name="password">
             </div>
 
             <div class="form-group">
-                <label for="contactNumber">Contact Number</label>
-                <input type="text" id="contactNumber" name="contactNumber">
+                <label for="contact">Contact Number</label>
+                <input type="text" id="contact" name="contact">
             </div>
 
             <div class="form-group">
                 <label for="supportReason">Why you’re supporting our campaign <span class="required">*</span> <span id="supportReasonError" class="error-message"></span></label>
-                <textarea id="supportReason" name="supportReason" rows="5" required></textarea>
+                <textarea id="supportReason" name="supportReason" rows="4"></textarea>
             </div>
 
-            <button type="submit">Sign Up</button>
+            <button type="submit">Join the Movement</button>
         </form>
     </div>
 
-    <script src="4thQuarter.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
